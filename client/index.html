@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#87CEEB">
+    <title>Pixel Glider - Mobile Flappy Bird</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Game Canvas -->
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <!-- Start Screen UI -->
+        <div id="startScreen" class="screen">
+            <div class="screen-content">
+                <h1 class="game-title">🪶 Pixel Glider</h1>
+                <p class="game-subtitle">Tap to Fly!</p>
+                <button id="startButton" class="game-button">How to Play</button>
+                <div class="high-score">
+                    <span>Best: <span id="highScoreDisplay">0</span></span>
+                </div>
+                <div class="controls-info">
+                    <p>🖱️ Click or 📱 Tap to jump</p>
+                    <p>💻 Spacebar (desktop)</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Instructions Screen UI -->
+        <div id="instructionsScreen" class="screen hidden">
+            <div class="screen-content">
+                <h2 class="instruction-title">🎮 How to Play</h2>
+                <div class="instruction-content">
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🪶</span>
+                        <p>Guide the bird through the pipes</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">⬆️</span>
+                        <p>Tap screen or press SPACEBAR to make the bird fly up</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🚫</span>
+                        <p>Don't hit the pipes or ground!</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🏆</span>
+                        <p>Score points by passing through pipes</p>
+                    </div>
+                </div>
+                <div class="ready-message">
+                    <p>Ready? Tap anywhere or press SPACEBAR to start!</p>
+                </div>
+                <button id="playButton" class="game-button">Start Flying!</button>
+            </div>
+        </div>
+        
+        <!-- Game Over Screen UI -->
+        <div id="gameOverScreen" class="screen hidden">
+            <div class="screen-content">
+                <h2 class="game-over-title">Game Over!</h2>
+                <div class="score-display">
+                    <div class="score-item">
+                        <span class="score-label">Current Score:</span>
+                        <span id="finalScore" class="score-value">0</span>
+                        <div id="currentAiMode" class="ai-mode-small">Normal 35-45</div>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Best Score:</span>
+                        <span id="newHighScore" class="score-value">0</span>
+                        <div id="bestAiMode" class="ai-mode-small">Normal 35-45</div>
+                    </div>
+                    <div class="score-item hidden" id="lastScoreItem">
+                        <span class="score-label">Previous Score:</span>
+                        <span id="lastScore" class="score-value">0</span>
+                        <div id="lastAiMode" class="ai-mode-small">Beginner 0-15</div>
+                    </div>
+                </div>
+                <div class="new-record hidden" id="newRecordBadge">
+                    🏆 New Record!
+                </div>
+                <div class="ai-progression hidden" id="aiProgression">
+                    <span id="progressionText">Level Up! Normal → Hard Mode</span>
+                </div>
+                <button id="restartButton" class="game-button">Play Again</button>
+                <button id="menuButton" class="game-button secondary">Main Menu</button>
+            </div>
+        </div>
+        
+        <!-- In-Game UI -->
+        <div id="gameUI" class="hidden">
+            <div class="score-counter">
+                <span id="currentScore">0</span>
+            </div>
+            <button id="pauseButton" class="pause-btn">⏸️</button>
+        </div>
+        
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="screen">
+            <div class="screen-content">
+                <div class="loading-spinner"></div>
+                <p>Loading Pixel Glider...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sound Toggle (Always Visible) -->
+    <button id="soundToggle" class="sound-toggle">🔊</button>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
