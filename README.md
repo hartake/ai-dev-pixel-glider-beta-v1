@@ -2,6 +2,14 @@
 
 A production-ready mobile-optimized Flappy Bird clone featuring an innovative AI-driven adaptive difficulty system that personalizes the gaming experience in real-time.
 
+## Screenshots
+
+| Main Menu | How To Play |
+| :---: | :---: |
+| <a href="https://github.com/user-attachments/assets/4d403ac5-bb3a-4538-b12b-4ee2a5a3d7fa" target="_blank"><img src="https://github.com/user-attachments/assets/4d403ac5-bb3a-4538-b12b-4ee2a5a3d7fa" width="360" alt="Start Screen" /></a> | <a href="https://github.com/user-attachments/assets/bbb89dc2-7b85-498e-b08a-1decbf77cc93" target="_blank"><img src="https://github.com/user-attachments/assets/bbb89dc2-7b85-498e-b08a-1decbf77cc93" width="360" alt="Gameplay Preview" /></a> |
+| **In-Game Adaptive AI Difficulty** | **Game Over / Stats** |
+| <a href="https://github.com/user-attachments/assets/7b9cbf0c-d987-4257-b31b-80cb3cb09612" target="_blank"> <img src="https://github.com/user-attachments/assets/e0ce742e-9e6e-4ed2-b4bd-6750f1d90b9f" width="360" alt="Game Over Screen" /></a> | <a href="https://github.com/user-attachments/assets/e0ce742e-9e6e-4ed2-b4bd-6750f1d90b9f" target="_blank"> <img src="https://github.com/user-attachments/assets/7b9cbf0c-d987-4257-b31b-80cb3cb09612" width="360" alt="Difficulty Settings" /> </a> |
+
 ## Overview
 
 Pixel Glider combines classic Flappy Bird gameplay with modern AI technology to create a dynamically adjusting game that responds to your skill level. The game analyzes your recent performance and automatically adjusts difficulty parameters to provide an optimal challenge that keeps you engaged without becoming frustrating.
